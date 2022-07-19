@@ -40,7 +40,7 @@
             this.btnDisplayGreeting.TabIndex = 0;
             this.btnDisplayGreeting.Text = "Display Greeting";
             this.btnDisplayGreeting.UseVisualStyleBackColor = true;
-            this.btnDisplayGreeting.Click += new System.EventHandler(this.btnDisplayGreeting_Click);
+            this.btnDisplayGreeting.Click += new System.EventHandler(this.BtnDisplayGreeting_Click);
             // 
             // txtName
             // 
@@ -53,7 +53,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(300, 386);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.btnDisplayGreeting);
             this.Name = "Form1";
