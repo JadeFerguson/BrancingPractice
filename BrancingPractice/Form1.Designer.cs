@@ -28,20 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnDisplayGreeting = new System.Windows.Forms.Button();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
+            // 
+            // btnDisplayGreeting
+            // 
+            this.btnDisplayGreeting.Location = new System.Drawing.Point(68, 158);
+            this.btnDisplayGreeting.Name = "btnDisplayGreeting";
+            this.btnDisplayGreeting.Size = new System.Drawing.Size(165, 117);
+            this.btnDisplayGreeting.TabIndex = 0;
+            this.btnDisplayGreeting.Text = "Display Greeting";
+            this.btnDisplayGreeting.UseVisualStyleBackColor = true;
+            this.btnDisplayGreeting.Click += new System.EventHandler(this.btnDisplayGreeting_Click);
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(33, 77);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(225, 43);
+            this.txtName.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.btnDisplayGreeting);
             this.Name = "Form1";
             this.Text = "Brancing Practice";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private Button btnDisplayGreeting;
+        private TextBox txtName;
     }
 }
